@@ -1,0 +1,7 @@
+@import '../vendor/mixins';
+
+
+@include font-face('Exo 2 Thin', '../fonts/Exo-2-Thin', 400);
+
+@include font-face('Trebuchet MS', '../fonts/Trebuchet-bold-MS', 700);
+@include font-face('Trebuchet MS', '../fonts/Trebuchet-regular-MS', 400);

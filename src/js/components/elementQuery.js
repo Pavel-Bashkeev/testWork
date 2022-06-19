@@ -1,0 +1,1 @@
+export const cardsLabel = document.querySelectorAll(".cards-label");

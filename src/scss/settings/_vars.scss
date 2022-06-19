@@ -1,0 +1,33 @@
+%bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+%bg-contain {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+:root {
+  //fonts
+  --font: "Trebuchet MS";
+  --font-second: "Exo 2 Thin";
+  //color
+  --primary: #1698d9;
+  --primary-hover: #2ea8e6;
+
+  --checked: #d91667;
+  --checked-hover: #e52e7a;
+
+  --disabled: #b3b3b3;
+
+  --dft-text: #666666;
+  --accent-text: #ffff66;
+  --white: #ffffff;
+  --black: #000000;
+  --card-bg: #f2f2f2;
+  //transition
+  --tr-main: all 0.3s ease-in-out;
+  --tr-slider: all 1.5s ease-in-out;
+}

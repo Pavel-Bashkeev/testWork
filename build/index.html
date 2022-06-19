@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <title>Тестовое задание</title>
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+  
+  <link rel="stylesheet" href="./css/main.min.css?_v=20220619163142">
+</head>
+
+  <body>
+    <main class="main">
+      <div class="container">
+        <h1 class="title tac">Ты сегодня покормил?</h1>
+        <!-- 
+           data-card-state управляет состояние карточки. Имеет 3 значения 
+           default - обычное состояние 
+           checked - выбрано 
+           disabled - отключен от действий
+         -->
+        <form class="cards">
+          <label class="cards-label" data-card-state="default">
+            <input
+              class="cards-label__checbox visually-hidden"
+              type="checkbox"
+            />
+            <div class="cards-label__item card">
+              <div class="card__preview">
+                <p class="card__text">
+                  <span class="card__text--default">
+                    Сказочное заморское яство
+                  </span>
+                  <span class="card__text--selectedHover">
+                    Котэ не одобряет?
+                  </span>
+                </p>
+                <h2 class="card__title">Нямушка</h2>
+                <p class="card__subtitle">с фуа-гра</p>
+                <p class="card__descr">
+                  <span class="card__descr-item card__descr--count">
+                    10 порций
+                  </span>
+                  <span class="card__descr-item card__descr--surprice">
+                    мышь в подарок
+                  </span> 
+                </p>
+                <div class="card__size size">
+                  <span class="size__count">0,5</span>
+                  <span class="size__units">кг</span>
+                </div>
+              </div>
+              <div class="card__actions">
+                <p class="card__actions-text tac card__actions-text--default">
+                  Чего сидишь? Порадуй котэ,
+                  <button class="btn-reset card__btn" type="button">
+                    купи.
+                  </button>
+                </p>
+                <p class="card__actions-text tac card__actions-text--checked">
+                  Печень утки разварная с артишоками.
+                </p>
+                <p class="card__actions-text tac card__actions-text--disabled">
+                  Печалька, с фуа-гра закончился.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <label class="cards-label" data-card-state="checked">
+            <input
+              class="cards-label__checbox visually-hidden"
+              type="checkbox"
+            />
+            <div class="cards-label__item card">
+              <div class="card__preview">
+                <p class="card__text">
+                  <span class="card__text--default">
+                    Сказочное заморское яство
+                  </span>
+                  <span class="card__text--selectedHover">
+                    Котэ не одобряет?
+                  </span>
+                </p>
+                <h2 class="card__title">Нямушка</h2>
+                <p class="card__subtitle">с рыбой</p>
+                <p class="card__descr">
+                  <span class="card__descr-item card__descr--count">
+                    40 порций
+                  </span>
+                  <span class="card__descr-item card__descr--surprice">
+                    2 мыши в подарок
+                  </span>  
+                </p>
+                <div class="card__size size">
+                  <span class="size__count">2</span>
+                  <span class="size__units">кг</span>
+                </div>
+              </div>
+              <div class="card__actions">
+                <p class="card__actions-text tac card__actions-text--default">
+                  Чего сидишь? Порадуй котэ,
+                  <button class="btn-reset card__btn" type="button">
+                    купи.
+                  </button>
+                </p>
+                <p class="card__actions-text tac card__actions-text--checked">
+                  Головы щучьи с чесноком да свежайшая сёмгушка.
+                </p>
+                <p class="card__actions-text tac card__actions-text--disabled">
+                  Печалька, с рыбой закончился.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <label class="cards-label" data-card-state="disabled">
+            <input
+              class="cards-label__checbox visually-hidden"
+              type="checkbox"
+              disabled
+            />
+            <div class="cards-label__item card">
+              <div class="card__preview">
+                <p class="card__text">
+                  <span class="card__text--default">
+                    Сказочное заморское яство
+                  </span>
+                  <span class="card__text--selectedHover">
+                    Котэ не одобряет?
+                  </span>
+                </p>
+                <h2 class="card__title">Нямушка</h2>
+                <p class="card__subtitle">с курой</p>
+                <p class="card__descr">
+                  <span class="card__descr-item card__descr--count">
+                    100 порций
+                  </span>
+                  <span class="card__descr-item card__descr--surprice">
+                    5 мышей в подарок заказчик доволен
+                  </span>  
+                </p>
+                <div class="card__size size">
+                  <span class="size__count">5</span>
+                  <span class="size__units">кг</span>
+                </div>
+              </div>
+              <div class="card__actions">
+                <p class="card__actions-text tac card__actions-text--default">
+                  Чего сидишь? Порадуй котэ,
+                  <button class="btn-reset card__btn" type="button">
+                    купи.
+                  </button>
+                </p>
+                <p class="card__actions-text tac card__actions-text--checked">
+                  Филе из цыплят с трюфелями в бульоне.
+                </p>
+                <p class="card__actions-text tac card__actions-text--disabled">
+                  Печалька, с курой закончился.
+                </p>
+              </div>
+            </div>
+          </label>
+        </form>
+      </div>
+    </main>
+
+    <script src="./js/main.min.js?_v=20220619163142"></script>
+  </body>
+</html>

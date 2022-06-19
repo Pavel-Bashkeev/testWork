@@ -1,0 +1,75 @@
+.cards-label__checbox:disabled
+  + .card
+  > .card__actions
+  > .card__actions-text--default,
+.cards-label__checbox:disabled
+  + .card
+  > .card__actions
+  > .card__actions-text--checked {
+  display: none;
+}
+.cards-label__checbox:disabled
+  + .card
+  > .card__actions
+  > .card__actions-text--disabled {
+  display: block;
+}
+.cards-label__checbox:disabled+.card>.card__preview{
+  --primary: #b3b3b3;
+  pointer-events: none;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--card-bg);
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  &::before{
+    z-index: 2;
+  }
+  .card__title,.card__subtitle{
+    color: var(--primary)
+  }
+}
+
+.cards-label__checbox:checked+.card>.card__preview{
+  --primary: #d91667;
+  &::before{
+    z-index: 2;
+  }
+}
+.cards-label__checbox:checked:hover+.card.hoverState>.card__preview{
+  --primary: #e52e7a;
+ .card__text{
+  &--default{
+    display: none;
+  }
+  &--selectedHover{
+    display: block;
+  }
+ }
+}
+
+
+
+
+.cards-label__checbox:checked
+  + .card
+  > .card__actions
+  > .card__actions-text--default,
+.cards-label__checbox:checked
+  + .card
+  > .card__actions
+  > .card__actions-text--disable {
+  display: none;
+}
+.cards-label__checbox:checked
+  + .card
+  > .card__actions
+  > .card__actions-text--checked {
+  display: block;
+}
